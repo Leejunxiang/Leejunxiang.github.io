@@ -1,0 +1,106 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://zfk123.ga
+date_format: "ordinal"
+title: 军机处
+subtitle: "平心静气"
+description: 
+keywords: 
+favicon: /favicon.ico
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: zfk
+organization: ZFK123.ga
+location: China
+
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: Leejunxiang/Leejunxiang.github.io
+
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: Leejunxiang
+    repo: blog-comments
+    oauth:
+        client_id: b23746bad20db7e83200
+        client_secret: 2266b25139ed82e40049e06c58ef28eb6edab267
+
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: Leejunxiang
+    repo: blog-comments
+    clientID: b23746bad20db7e83200
+    clientSecret: 2266b25139ed82e40049e06c58ef28eb6edab267
+
+
+theme: jekyll-theme-slate
